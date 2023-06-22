@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">   
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DỰ BÁO THỜI TIẾT </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css" integrity="sha512-3PN6gfRNZEX4YFyz+sIyTF6pGlQiryJu9NlGhu9LrLMQ7eDjNgudQoFDK3WSNAayeIKc6B8WXXpo4a7HqxjKwg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="nav">
+        <ul class="nav-list">
+            <li class=" nav-item cl1">
+                <a href="./Final.html">
+                <button class="btn btn--thoitiet"> Thời tiết hôm nay </button> </a>
+             </li>
+        </ul>
+        <ul class="nav-list">
+            <li class=" nav-item cl2">
+               <a href="./bieudo.html">
+               <button class="btn btn--bieudo"> Biểu đồ chi tiết </button> </a>
+            </li>
+           </ul>  
+           <ul class="nav-list">
+               <li class="nav-item  cl3">
+                   <a href="./suckhoe.html">
+                   <button class="btn btn--suckhoe"> Thông tin sức khỏe </button> </a>
+               </li>
+           </ul>    
+    </div>
+
+    <main>
+        <div id="thongso">
+            <ul class="icon">
+                <li class="iconitem icon-temp">
+                    <img id="temp" class="card-img-top" src="./img/nhietdo.png" alt="Card image" style="width: 45%">
+                    <p class="pp"> Nhiệt độ </p>
+                    <h1 class="doc"> <span id="nhietdo">00</span> &degC </h1>
+                </li>
+                <li class="iconitem icon-gio">
+                    <img id="wind" class="card-img-top" src="./img/tocdogio.png" alt="Card image" style="width: 37%">
+                    <p class="ppp"> Tốc độ gió </p>
+                    <h1 class="ms"> <span id="tocdogio">00</span> m/s</h1>
+                 </li>
+                 <li class="iconitem icon-huong">
+                    <img id="hggio" class="card-img-top" src="./img/gagio.png" alt="Card image" style="width: 35%">
+                    <p  class="pppp"> Hướng gió </p>
+                    <h2 class="do"> <span id="goc">00</span> &deg </h2>
+                    <h5> <span id="huonggio">00</span> </h5>
+                </li>
+                <li class="iconitem icon-thoigian">
+                    <p id="Vitri">Biên Hòa</p>
+                    <br>
+                    <p id="day">
+                    <script language="javascript" type="text/javascript"> 
+                        dayName = new Array ("Chủ nhật","Thứ hai","Thứ ba","Thứ tư","Thứ năm","Thứ sáu","Thứ bảy") 
+                        monName = new Array ("1","2","3","4","5","6","7","8","9","10","11","12") 
+                        now = new Date 
+                        document.getElementById("day").innerHTML = dayName[now.getDay()]+ ", " +now.getDate()+ "/" +monName[now.getMonth()]+ "/" +now.getFullYear();
+                        </script>
+                        </p>
+                        <br>
+                    <p id="time">
+                    <script>
+                        var today = new Date();
+                        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+                        document.getElementById("time").innerHTML = time;
+                    </script>
+                    </p>
+                </li> 
+            </ul>
+            <ul class="icon">
+                <li class="iconitem icon-humi"> 
+                    <img id="humi" class="card-img-top" src="./img/doam.png" alt="Card image" style="width: 50%">
+                    <p class="qq"> Độ ẩm </p>
+                    <h1 class="phantram"> <span id="doam">00 </span> % </h1>
+                </li>
+                <li class="iconitem icon-mua"> 
+                <img id="rain" class="card-img-top" src="./img/rainfall.png" alt="Card image" style="width: 32%">
+                <p class="qqq"> Lượng mưa </p>
+                <h1 class="lmua"> <span id="lmua">00</span> mm </h1>
+                </li>
+                <li class="iconitem icon-uv"> 
+                    <img id="uv" class="card-img-top" src="./img/uv.png" alt="Card image" style="width: 37%">
+                    <p class="qqqq"> Chỉ số UV </p>
+                    <h2 class="tiauv"> <span id="tiauv">00</span> </h2>
+                </li>
+                <li class="icon-app"> 
+                <p class="tenapp"> Tải ứng dụng điện thoại </p>
+                <img id="app" class="card-img-top" src="./img/app.png" alt="Card image">
+                </li> 
+            </ul>
+              
+           </div> 
+  
+        <!-- <div class="canhbao">-->
+           <ul class="thongtin">
+
+              <li class="thongtin-item">
+                  <h5>Chỉ số UV thấp: 1-2 </h5>
+              </li>
+
+              <li class="thongtin-item">
+                  <h5>Chỉ số UV vừa: 3-5 </h5>
+              </li>
+
+              <li class="thongtin-item">
+                  <h5>Chỉ số UV cao: 6-7</h5>
+              </li>
+
+              <li class="thongtin-item">
+                  <h5>Chỉ số UV rất cao: 8-10 </h5>
+              </li>
+
+              <li class="thongtin-item">
+                  <h5>Chỉ số UV cực cao: 11+ </h5>
+              </li>
+
+           </ul>
+
+  
+    </main>
+    
+    <footer class="footer">
+        <div>
+           <ul class="footer-item">
+              <li class="info"> <a> Đặng Mỹ Hạnh </a>  </li>
+              <li class="info"> <a> Email: 19161102@student.hcmute.edu.vn </a> </li>
+              <li class="info"> <a> Thông tin liên hệ</a> </li>
+           </ul>
+        </div>
+        <div>
+           <ul class="footer-item">
+              <li class="info"> <a> Trường Đại học Sư phạm Kỹ thuật Thành phố Hồ Chí Minh </a>  </li>
+              <li class="info"> <a> Khoa Đào tạo Chất lượng cao </a> </li>
+              <li class="info"> <a> Ngành Công nghệ Kỹ thuật Điện tử Viễn thông</a> </li>
+           </ul>
+        </div>
+     </footer>
+
+     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+     <script src="index.js"></script>
+
+</body>
+</html>

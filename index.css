@@ -1,0 +1,524 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+/* Navbar */
+.nav {
+    padding: 0 180px;
+    display: flex;
+    min-height: 60px;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #92ebd4, #83d3eb, #89bdf9, #6a9be3);    
+}
+.btn {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 28px;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: opacity .3s ease;
+ }
+.btn:hover {
+    opacity: 0.6;
+    color: rgb(116, 1, 204);
+}
+.btn + .btn {
+    margin: 30px;
+}
+.btn--thoitiet {
+    color: rgb(116, 1, 204);
+}
+
+.nav-list {
+    padding-left: 0;
+    margin: auto 16px;
+}
+
+.nav-item {
+    color: #1c0125;
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+}
+.footer {
+    font-size: 18px;
+    color: rgb(66, 65, 65);
+    margin-top: 25px;
+    display: flex;
+    background: linear-gradient(-90deg, #92ebd4, #83d3eb, #89bdf9, #7aa9ee);
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 30px;
+}
+li {
+    margin: 2px;
+    display: block;
+    padding: 0 10px 0 0;
+ }
+
+/* KHUNG */
+
+@media (max-width: 860px) {
+    .icon {
+        padding-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 50px;
+        padding-left: 0;
+        margin: auto 16px;
+        flex-direction: column;
+    }
+    .icon-temp {
+        width: 330px;
+        height: 200px;
+        border-radius: 50px;
+        margin-left: 30%;
+    }
+    .icon-gio {
+        width: 380px;
+        height: 200px;
+        border-radius: 50px;
+        margin-left: 27%;
+        margin-top: 25px;
+    }
+    .icon-huong {
+        width: 330px;
+        height: 200px;
+        border-radius: 50px;
+        margin-left: 30%;
+        margin-top: 25px;
+    }
+    .icon-thoigian {
+        border-radius: 50px;
+        width: 380px;
+        height: 200px;
+        border-radius: 50px;
+        margin-left: 35%;
+        margin-top: 25px;
+    }
+    .icon-humi {
+    width: 330px;
+    height: 200px;
+    margin-left: 30%;
+    margin-top: 25px;
+    }
+    .icon-mua {
+    width: 380px;
+    height: 200px;
+    border-radius: 50px;
+    margin-left: 27%;
+    margin-top: 25px;
+}
+    .icon-uv {
+    width: 330px;
+    height: 200px;
+    border-radius: 50px;
+    margin-left: 30%;
+    margin-top: 25px;
+} 
+    .icon-app {
+    border-radius: 50px;
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    margin-left: 35%;
+    margin-top: 30px;
+    margin-top: 25px;
+    }
+
+    .thongtin {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        font-size: 22px;
+        font-weight: bold;
+        font-family: Roboto;
+        padding: 0 150px;
+        text-align: center;
+    }
+    .thongtin-item {
+        margin-left: -30px;
+        padding: 0px 30px;
+        border-radius: 100px;
+    }
+}       
+
+@media (min-width: 860px) and (max-width: 1326px) {
+    .icon {
+        padding-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 50px;
+        padding-left: 0;
+        margin: auto 16px;
+        flex-direction: column;
+    }
+    .icon-temp {
+        width: 330px;
+        height: 200px;
+        border-radius: 50px;
+        margin-left: 10%;
+    }
+    .icon-gio {
+        width: 380px;
+        height: 200px;
+        border-radius: 50px;
+        margin-left: 55%;
+        margin-top: -200px;
+    }
+    .icon-huong {
+        width: 330px;
+        height: 200px;
+        border-radius: 50px;
+        margin-left: 10%;
+        margin-top: 25px;
+    }
+    .icon-thoigian {
+        border-radius: 50px;
+        width: 380px;
+        height: 200px;
+        border-radius: 50px;
+        margin-left: 60%;
+        margin-top: -200px;
+    }
+    .icon-humi {
+    width: 330px;
+    height: 200px;
+    border-radius: 50px;
+    margin-left: 10%;
+    }
+    .icon-mua {
+    width: 380px;
+    height: 200px;
+    border-radius: 50px;
+    margin-left: 55%;
+    margin-top: -150px;
+}
+    .icon-uv {
+    width: 330px;
+    height: 200px;
+    border-radius: 50px;
+    margin-left: 10%;
+    margin-top: 25px;
+} 
+    .icon-app {
+    border-radius: 50px;
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    margin-left: 60%;
+    margin-top: -200px;
+    }
+
+    .thongtin {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        font-size: 22px;
+        font-weight: bold;
+        font-family: Roboto;
+        padding: 0 150px;
+        text-align: center;
+    }
+    /* .thongtin-item {
+        margin-left: -30px;
+        padding: 0px 30px;
+        border-radius: 100px;
+    } */
+}       
+
+
+.icon {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+    padding-left: 0;
+    margin: auto 16px;
+
+}
+.iconitem {
+    background: linear-gradient(-45deg, #f2e55d, #ce8fd9, #ebebd9, #6ae8ef);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 15s ease infinite;
+            animation: gradient 15s ease infinite;
+            @-webkit-keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+            
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }       
+                
+}
+}
+
+/* ////////////// Nhiệt độ ////////////// */
+.icon-temp {
+    width: 330px;
+    height: 200px;
+    border-radius: 50px;
+}
+#temp {
+    margin-top: 30px;
+    margin-left: 0;
+}
+.pp {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 40px;
+    margin-top: -140px;
+    margin-left: 130px;
+}
+.doc {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 60px;
+    margin: -30px 0;
+    padding-left: 130px;
+ }
+
+ /* ////////////// Tốc độ gió ////////////// */
+ .icon-gio {
+    width: 380px;
+    height: 200px;
+    border-radius: 50px;
+}
+#wind {
+    margin-top: 70px;
+    margin-left: 15px;
+}
+.ppp {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 40px;
+    margin-top: -120px;
+    margin-left: 155px;
+}
+#tocdogio {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 55px;
+    margin: -30px 0;
+    padding-left: 155px;
+ }
+ .ms {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 50px;
+    margin: -30px 0;
+ }
+
+  /* ////////////// Hướng gió ////////////// */
+.icon-huong {
+    width: 330px;
+    height: 200px;
+    border-radius: 50px;
+}
+#hggio {
+    margin-top: 40px;
+    margin-left: 15px;
+}
+.pppp {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 40px;
+    margin-top: -140px;
+    margin-left: 115px;
+}
+.do {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 50px;
+    margin: -40px 0 -33px 0;
+    padding-left: 155px;
+ }
+ #huonggio {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 30px;
+    padding-left: 155px;
+ }
+
+   /* ////////////// Thời gian, địa điểm ////////////// */
+.icon-thoigian {
+border-radius: 50px;
+width: 250px;
+height: 200px;
+border-radius: 50px;
+}
+#Vitri {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 35px;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+#day {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 23px;
+    margin-top: -45px;
+    margin-left: 20px;
+
+}
+#time {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 25px;
+    margin-top: -40px;
+    margin-left: 120px;
+}
+
+/* ////////////// Độ âm ////////////// */
+.icon-humi {
+    width: 330px;
+    height: 200px;
+    border-radius: 50px;
+}
+#humi {
+    margin-top: 50px;
+    margin-left: 0;
+}
+.qq {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 40px;
+    margin-top: -130px;
+    margin-left: 165px;
+}
+.phantram {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 60px;
+    margin: -30px 0;
+    padding-left: 160px;
+ }
+
+ /* ////////////// Lượng mưa ////////////// */
+ .icon-mua {
+    width: 380px;
+    height: 200px;
+    border-radius: 50px;
+}
+#rain {
+    margin-top: 50px;
+    margin-left: 15px;
+}
+.qqq {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 40px;
+    margin-top: -140px;
+    margin-left: 155px;
+}
+.lmua {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 50px;
+    margin: -30px 0;
+    padding-left: 155px;
+ }
+
+  /* ////////////// Tia uv ////////////// */
+.icon-uv {
+    width: 330px;
+    height: 200px;
+    border-radius: 50px;
+} 
+#uv {
+    margin-top: 40px;
+    margin-left: 15px;
+}
+.qqqq {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 40px;
+    margin-top: -130px;
+    margin-left: 130px;
+}
+.tiauv {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 60px;
+    margin: -30px 0;
+    padding-left: 180px;
+ }
+
+  /* ////////////// APP ////////////// */
+
+.icon-app {
+    border-radius: 50px;
+    width: 250px;
+    height: 200px;
+    background-color: white;
+}
+.tenapp {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 20px;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+#app {
+    margin-top: -15px;
+    margin-left: 30px;
+}
+
+ /*----------CANH BAO----------*/
+ .thongtin {
+    display: flex;
+    justify-content: space-between;
+	font-size: 22px;
+	font-weight: bold;
+    font-family: Roboto;
+    padding: 0 150px;
+}
+.thongtin-item {
+    margin-left: -30px;
+    padding: 0px 30px;
+    border-radius: 100px;
+}
+
+.thongtin-item:nth-child(1) {
+    background-color: greenyellow;
+}
+.thongtin-item:nth-child(2) {
+    background-color: yellow ;
+}
+.thongtin-item:nth-child(3) {
+    background-color: rgb(253, 175, 32);
+}
+.thongtin-item:nth-child(4) {
+    background-color:rgb(255, 103, 103) ;
+}
+.thongtin-item:nth-child(5) {
+    background-color: rgb(252, 15, 252);
+}

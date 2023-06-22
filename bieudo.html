@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">   
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DỰ BÁO THỜI TIẾT </title>
+    <link rel="stylesheet" href="bieudo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css" integrity="sha512-3PN6gfRNZEX4YFyz+sIyTF6pGlQiryJu9NlGhu9LrLMQ7eDjNgudQoFDK3WSNAayeIKc6B8WXXpo4a7HqxjKwg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <div class="nav">
+            <ul class="nav-list">
+                <li class=" nav-item cl1">
+                    <a href="./index.html">
+                    <button class="btn btn--thoitiet"> Thời tiết hôm nay </button> </a>
+                 </li>
+            </ul>
+            <ul class="nav-list">
+                <li class=" nav-item cl2">
+                   <a href="./bieudo.html">
+                   <button class="btn btn--bieudo"> Biểu đồ chi tiết </button> </a>
+                </li>
+               </ul>  
+               <ul class="nav-list">
+                   <li class="nav-item  cl3">
+                       <a href="./suckhoe.html">
+                       <button class="btn btn--suckhoe"> Thông tin sức khỏe </button> </a>
+                   </li>
+               </ul>    
+        </div>
+    </header>
+
+    <div id="bieudo">
+        <table id="bang" >
+            <tr class="hang1">
+                <td class="cot11">
+                    <p class="tenbieudo"> Nhiệt độ hiện tại: <span id="nhietdo">00</span>&degC</p>
+                    <iframe class="hinhnhietdo" width = "460px"; height = "250px" src="https://thingspeak.com/channels/2122346/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=180&title=Bi%E1%BB%83u+%C4%91%E1%BB%93+nhi%E1%BB%87t+%C4%91%E1%BB%99&type=line&xaxis=Th%E1%BB%9Di+gian&yaxis=Nhi%E1%BB%87t+%C4%91%E1%BB%99"></iframe>  
+                </td>
+                <td class="cot12">
+                    <p class="tenbieudo"> Độ ẩm hiện tại:  <span id="doam">00 </span>%</p>
+                    <iframe class="doam" width = "460px"; height = "250px" src="https://thingspeak.com/channels/2122346/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=180&title=Bi%E1%BB%83u+%C4%91%E1%BB%93+%C4%91%E1%BB%99+%E1%BA%A9m&type=line&xaxis=Th%E1%BB%9Di+gian&yaxis=%C4%90%E1%BB%99+%E1%BA%A9m"></iframe>  
+                </td>
+            </tr>
+
+            <tr class="hang2">
+                <td class="cot21">
+                    <p class="tenbieudo"> Lượng mưa hiện tại:  <span id="lmua">00</span> mm </p>
+                    <iframe class="luongmua" width = "460px"; height = "250px" src="https://thingspeak.com/channels/2122346/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=180&title=Bi%E1%BB%83u+%C4%91%E1%BB%93+l%C6%B0%E1%BB%A3ng+m%C6%B0a&type=line&xaxis=Th%E1%BB%9Di+gian&yaxis=L%C6%B0%E1%BB%A3ng+m%C6%B0a"></iframe>  
+                </td>
+                <td class="cot22">
+                    <p class="tenbieudo"> Tốc độ gió hiện tại:  <span id="tocdogio">00</span> m/s </p>
+                    <iframe class="tocdogio" width = "460px"; height = "250px" src="https://thingspeak.com/channels/2122346/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=180&title=Bi%E1%BB%83u+%C4%91%E1%BB%93+t%E1%BB%91c+%C4%91%E1%BB%99+gi%C3%B3&type=line&xaxis=Th%E1%BB%9Di+gian&yaxis=T%E1%BB%91c+%C4%91%E1%BB%99+gi%C3%B3"></iframe>  
+                </td>
+            </tr>
+
+            <tr class="hang3">
+                <td class="cot31">
+                    <p class="tenbieudo"> Chỉ số tia UV hiện tại:  <span id="tiauv">00</span> </p>
+                    <iframe class="uv" width= "460px"; height = "260px"  src="https://thingspeak.com/channels/2122346/widgets/640217"></iframe>  
+                </td>
+                <td class="cot32">
+                    <p class="tenbieudo"> Hướng gió hiện tại: hướng <span id="huonggio">00</span> </p>
+                    <iframe class="gio" width = "460px"; height = "265px" src="https://thingspeak.com/apps/matlab_visualizations/509726"></iframe>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <footer class="footer">
+        <div>
+           <ul class="footer-left">
+              <li> <a> Đặng Mỹ Hạnh </a>  </li>
+              <li> <a> Email: 19161102@student.hcmute.edu.vn </a> </li>
+              <li> <a> Thông tin liên hệ</a> </li>
+           </ul>
+        </div>
+        <div>
+           <ul class="footer-right">
+              <li> <a> Trường Đại học Sư phạm Kỹ thuật Thành phố Hồ Chí Minh </a>  </li>
+              <li> <a> Khoa Đào tạo Chất lượng cao </a> </li>
+              <li> <a> Ngành Công nghệ Kỹ thuật Điện tử Viễn thông</a> </li>
+           </ul>
+        </div>
+     </footer>
+
+     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+     <script src="bieudo.js"></script>
+
+</body>
+
