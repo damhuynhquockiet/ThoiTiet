@@ -12,65 +12,69 @@
 </head>
 
 <body>
-    <header>
-        <!-- Navbar -->
-        <div class="nav">
-            <ul class="nav-list">
-                <li class=" nav-item cl1">
-                    <a href="./index.html">
-                    <button class="btn btn--thoitiet"> Thời tiết hôm nay </button> </a>
-                 </li>
-            </ul>
-            <ul class="nav-list">
-                <li class=" nav-item cl2">
-                   <a href="./bieudo.html">
-                   <button class="btn btn--bieudo"> Biểu đồ chi tiết </button> </a>
-                </li>
-               </ul>  
-               <ul class="nav-list">
-                   <li class="nav-item  cl3">
-                       <a href="./suckhoe.html">
-                       <button class="btn btn--suckhoe"> Thông tin sức khỏe </button> </a>
-                   </li>
-               </ul>    
-        </div>
-    </header>
+    <!-- Navbar -->
+    <div class="nav">
+        <ul class="nav-list">
+            <li class=" nav-item cl1">
+                <a href="./index.html">
+                <button class="btn btn--thoitiet"> Thời tiết hôm nay </button> </a>
+             </li>
+        </ul>
+        <ul class="nav-list">
+            <li class=" nav-item cl2">
+               <a href="./bieudo.html">
+               <button class="btn btn--bieudo"> Biểu đồ chi tiết </button> </a>
+            </li>
+           </ul>  
+           <ul class="nav-list">
+               <li class="nav-item  cl3">
+                   <a href="./suckhoe.html">
+                   <button class="btn btn--suckhoe"> Thông tin sức khỏe </button> </a>
+               </li>
+           </ul>    
+    </div>
 
     <div id="bieudo">
         <table id="bang" >
             <tr class="hang1">
                 <td class="cot11">
                     <p class="tenbieudo"> Nhiệt độ hiện tại: <span id="nhietdo">00</span>&degC</p>
-                    <iframe class="hinhnhietdo" width = "460px"; height = "250px" src="https://thingspeak.com/channels/2122346/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=180&title=Bi%E1%BB%83u+%C4%91%E1%BB%93+nhi%E1%BB%87t+%C4%91%E1%BB%99&type=line&xaxis=Th%E1%BB%9Di+gian&yaxis=Nhi%E1%BB%87t+%C4%91%E1%BB%99"></iframe>  
+                    <iframe class="hinhnhietdo" src="https://thingspeak.com/channels/2122346/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=180&title=Bi%E1%BB%83u+%C4%91%E1%BB%93+nhi%E1%BB%87t+%C4%91%E1%BB%99&type=line&xaxis=Th%E1%BB%9Di+gian&yaxis=Nhi%E1%BB%87t+%C4%91%E1%BB%99"></iframe>  
                 </td>
                 <td class="cot12">
                     <p class="tenbieudo"> Độ ẩm hiện tại:  <span id="doam">00 </span>%</p>
-                    <iframe class="doam" width = "460px"; height = "250px" src="https://thingspeak.com/channels/2122346/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=180&title=Bi%E1%BB%83u+%C4%91%E1%BB%93+%C4%91%E1%BB%99+%E1%BA%A9m&type=line&xaxis=Th%E1%BB%9Di+gian&yaxis=%C4%90%E1%BB%99+%E1%BA%A9m"></iframe>  
+                    <iframe class="doam" src="https://thingspeak.com/channels/2122346/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=180&title=Bi%E1%BB%83u+%C4%91%E1%BB%93+%C4%91%E1%BB%99+%E1%BA%A9m&type=line&xaxis=Th%E1%BB%9Di+gian&yaxis=%C4%90%E1%BB%99+%E1%BA%A9m"></iframe>  
                 </td>
             </tr>
 
             <tr class="hang2">
                 <td class="cot21">
                     <p class="tenbieudo"> Lượng mưa hiện tại:  <span id="lmua">00</span> mm </p>
-                    <iframe class="luongmua" width = "460px"; height = "250px" src="https://thingspeak.com/channels/2122346/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=180&title=Bi%E1%BB%83u+%C4%91%E1%BB%93+l%C6%B0%E1%BB%A3ng+m%C6%B0a&type=line&xaxis=Th%E1%BB%9Di+gian&yaxis=L%C6%B0%E1%BB%A3ng+m%C6%B0a"></iframe>  
+                    <iframe class="luongmua" src="https://thingspeak.com/channels/2122346/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=180&title=Bi%E1%BB%83u+%C4%91%E1%BB%93+l%C6%B0%E1%BB%A3ng+m%C6%B0a&type=line&xaxis=Th%E1%BB%9Di+gian&yaxis=L%C6%B0%E1%BB%A3ng+m%C6%B0a"></iframe>  
                 </td>
                 <td class="cot22">
                     <p class="tenbieudo"> Tốc độ gió hiện tại:  <span id="tocdogio">00</span> m/s </p>
-                    <iframe class="tocdogio" width = "460px"; height = "250px" src="https://thingspeak.com/channels/2122346/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=180&title=Bi%E1%BB%83u+%C4%91%E1%BB%93+t%E1%BB%91c+%C4%91%E1%BB%99+gi%C3%B3&type=line&xaxis=Th%E1%BB%9Di+gian&yaxis=T%E1%BB%91c+%C4%91%E1%BB%99+gi%C3%B3"></iframe>  
+                    <iframe class="tocdogio" src="https://thingspeak.com/channels/2122346/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=180&title=Bi%E1%BB%83u+%C4%91%E1%BB%93+t%E1%BB%91c+%C4%91%E1%BB%99+gi%C3%B3&type=line&xaxis=Th%E1%BB%9Di+gian&yaxis=T%E1%BB%91c+%C4%91%E1%BB%99+gi%C3%B3"></iframe>  
                 </td>
             </tr>
 
             <tr class="hang3">
                 <td class="cot31">
                     <p class="tenbieudo"> Chỉ số tia UV hiện tại:  <span id="tiauv">00</span> </p>
-                    <iframe class="uv" width= "460px"; height = "260px"  src="https://thingspeak.com/channels/2122346/widgets/640217"></iframe>  
+                    <iframe class="uv" src="https://thingspeak.com/channels/2122346/widgets/640217"></iframe>  
                 </td>
                 <td class="cot32">
                     <p class="tenbieudo"> Hướng gió hiện tại: hướng <span id="huonggio">00</span> </p>
-                    <iframe class="gio" width = "460px"; height = "265px" src="https://thingspeak.com/apps/matlab_visualizations/509726"></iframe>
+                    <iframe class="gio" src="https://thingspeak.com/apps/matlab_visualizations/509726"></iframe>
                 </td>
             </tr>
         </table>
+        <div id="excel">
+            <p class="tenbangtinh"> Bảng dữ liệu thời tiết</p>
+            <!-- <iframe class="bangexcel" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSz4VwXr6eiReJ8vaWKmOeCCqXdCAviaMuJfgPV4CPmlQb6GcnxhFVEVW7UBb5HPzfWxkEzMRlE8Zm7/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe> -->
+            <iframe class="bangexcel" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSRKENRK1ftxU2qcGQl0ACzGbILaM-4AsV2Zk7e-vyJj-YsrViIZVPvNYOCtA-0rh0hszdX9EcKGbjT/pubhtml?widget=true&amp;headers=false"></iframe>
+         </div>
+  
     </div>
 
     <footer class="footer">

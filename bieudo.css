@@ -55,7 +55,7 @@ body {
 .footer {
     font-size: 18px;
     color: rgb(66, 65, 65);
-    margin-top: 0px;
+    margin-top: 25px;
     display: flex;
     background: linear-gradient(-90deg, #92ebd4, #83d3eb, #89bdf9, #7aa9ee);
     justify-content: space-between;
@@ -67,6 +67,25 @@ li {
     display: block;
     padding: 0 10px 0 0;
  }
+
+.bangexcel {
+    width: 1450px;
+    height: 600px;
+    margin-left: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tenbangtinh {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 40px;
+    margin: 0;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background: linear-gradient(90deg, #92ebd4, #83d3eb, #89bdf9, #6a9be3);
+}
 
 /* ----------BIEU DO---------- */
 
@@ -87,6 +106,30 @@ li {
     text-align: center;
     margin: 28px 0 10px 0;
 }
+.hinhnhietdo {
+    width: 460px; 
+    height: 250px;
+}
+.doam {
+    width: 460px; 
+    height: 250px;
+}
+.luongmua {
+    width: 460px; 
+    height: 250px;
+}
+.tocdogio {
+    width: 460px; 
+    height: 250px;
+}
+.uv {
+    width: 460px; 
+    height: 250px;
+}
+.gio {
+    width: 460px; 
+    height: 250px;
+}
 .cot11 {
     padding: 0 150px;
 }
@@ -105,4 +148,142 @@ li {
 }
 .cot32 {
     padding: 0 150px 30px 150px;
+}
+
+@media (max-width: 830px) {
+    /* Navbar */
+.nav {
+    padding: 0 180px;
+    display: flex;
+    min-height: 60px;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #92ebd4, #83d3eb, #89bdf9, #6a9be3);    
+}
+.btn {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 28px;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: opacity .3s ease;
+ }
+.btn:hover {
+    opacity: 0.6;
+    color: rgb(116, 1, 204);
+}
+.btn + .btn {
+    margin: 30px;
+}
+.btn--thoitiet {
+    color: rgb(116, 1, 204);
+}
+
+.nav-list {
+    padding-left: 0;
+    margin: auto 16px;
+}
+
+.nav-item {
+    color: #1c0125;
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+}
+.footer {
+    font-size: 11px;
+    color: rgb(66, 65, 65);
+    margin-top: 25px;
+    display: flex;
+    background: linear-gradient(-90deg, #92ebd4, #83d3eb, #89bdf9, #7aa9ee);
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 30px;
+}
+li {
+    margin: 2px;
+    display: block;
+    padding: 0 10px 0 0;
+ }
+ #bang {
+    background: linear-gradient(45deg, #f2e55d, #ce8fd9, #ebebd9, #6ae8ef);
+    /* top: 60px;
+    padding:0; */
+}
+ .bieudo {
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+ .tenbieudo {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+}
+.hinhnhietdo {
+    width: 410px; 
+    height: 250px;
+  }
+.doam {
+    width: 410px; 
+    height: 250px;
+}
+.luongmua {
+    width: 410px; 
+    height: 250px;
+}
+.tocdogio {
+    width: 410px; 
+    height: 250px;
+}
+.uv {
+    width: 410px; 
+    height: 250px;
+}
+.gio {
+    width: 410px; 
+    height: 250px;
+}
+.cot11 {
+    padding: 0px;
+}
+
+.cot12 {
+    padding: 0px;
+}
+.cot21 {
+    padding: 0px;
+}
+.cot22 {
+    padding: 0px;
+}
+.cot31 {
+    padding: 0px;
+}
+.cot32 {
+    padding: 0px;
+}
+.bangexcel {
+    margin-left: 0;
+    width: 830px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tenbangtinh {
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 40px;
+    margin: 0;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background: linear-gradient(90deg, #92ebd4, #83d3eb, #89bdf9, #6a9be3);
+}
+
 }
